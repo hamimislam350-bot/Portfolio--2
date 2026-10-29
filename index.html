@@ -211,6 +211,10 @@
   .pf-item:hover .ph-icon{color:var(--red);border-color:var(--red);background:rgba(255,59,59,0.08);}
   .pf-item span{font-size:12px;color:var(--text-faint);font-weight:500;}
   .pf-item .pf-label{position:absolute;top:14px;left:14px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-faint);background:rgba(0,0,0,0.4);padding:4px 10px;border-radius:100px;}
+  .pf-item.pf-has-img{aspect-ratio:16/9;}
+  .pf-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.8,.2,1);}
+  .pf-item:hover img{transform:scale(1.05);}
+  .pf-item .pf-label{z-index:2;}
   .pf-more{text-align:center;margin-top:40px;}
 
   /* Contact */
@@ -475,12 +479,11 @@
         </div>
       </div>
       <div class="pf-grid" id="pfGrid" data-reveal>
-        <div class="pf-item" data-cat="video"><span class="pf-label">Video</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div><span>Add your video</span></div>
-        <div class="pf-item" data-cat="thumb"><span class="pf-label">Thumbnail</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-image"/></svg></div><span>Add your thumbnail</span></div>
-        <div class="pf-item" data-cat="short"><span class="pf-label">Short</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div><span>Add your short</span></div>
-        <div class="pf-item" data-cat="doc"><span class="pf-label">Documentary</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-clapper"/></svg></div><span>Add your edit</span></div>
-        <div class="pf-item" data-cat="video"><span class="pf-label">Video</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-play"/></svg></div><span>Add your video</span></div>
-        <div class="pf-item" data-cat="thumb"><span class="pf-label">Thumbnail</span><div class="ph-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-image"/></svg></div><span>Add your thumbnail</span></div>
+        <div class="pf-item pf-has-img" data-cat="thumb"><span class="pf-label">Thumbnail</span><img src="thumb-1.jpg" alt="Thumbnail 1" loading="lazy"></div>
+        <div class="pf-item pf-has-img" data-cat="thumb"><span class="pf-label">Thumbnail</span><img src="thumb-2.jpg" alt="Thumbnail 2" loading="lazy"></div>
+        <div class="pf-item pf-has-img" data-cat="thumb"><span class="pf-label">Thumbnail</span><img src="thumb-3.jpg" alt="Thumbnail 3" loading="lazy"></div>
+        <div class="pf-item pf-has-img" data-cat="thumb"><span class="pf-label">Thumbnail</span><img src="thumb-4.jpg" alt="Thumbnail 4" loading="lazy"></div>
+        <div class="pf-item pf-has-img" data-cat="thumb"><span class="pf-label">Thumbnail</span><img src="thumb-5.jpg" alt="Thumbnail 5" loading="lazy"></div>
       </div>
       <div class="pf-more" data-reveal>
         <a href="#" class="btn btn-ghost"><svg class="icon" viewBox="0 0 24 24" style="width:15px;height:15px"><use href="#i-grid"/></svg> View All Work</a>
